@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  max-width: 660px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+
+}
+.left{
+  width: 50%;
+}
+.left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.right{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px ; 
+  gap: 15px;
+  margin: auto;
+}
+.tiltle_top {
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+.tiltle{
+  color:black;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  line-height: 40px;
+}
+.description{
+  color: hsl(227, 9%, 39%);
+  font-size: 14px;
+  width: 220px;
+  font-weight: 600;
+  display: flex; font-family: 'Montserrat', sans-serif;
+  line-height: 20px;
+}
+.price{
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 35px;
+}
+.old{
+  margin-left: 30px;
+  text-decoration:  line-through;
+  font-size: 15px;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  margin-top: 8px;
+  color: gray;
+}
+.new{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color:  hsl(158, 36%, 37%);
+}
+button{
+  text-align: center;
+  height: 50px;
+  border-radius: 15px;
+  color:  white;
+  background-color:   hsl(158, 36%, 37%);
+  border: none;
+  font-weight: 600;
+}
+button img{
+  margin-right: 5px;
+  margin-bottom: 2px;
+  width: 20px;
+  height: 20px;
+}
+button:hover{
+  background-color:   hsl(159, 52%, 17%);
+}
+@media only screen and  (max-width:550px){
+  .card{
+    flex-direction: column;
+    border-radius: 20px;
+    height: auto;
+    margin: 1rem;
+  }
+  .left{
+    width: 100%;
+    height: 40%;
+  }
+  .left img {
+    content: url(../product-preview-card-component-main/images/image-product-mobile.jpg);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .right{
+    width: 100%;
+    height: 60%;
+    padding: 0 30px;
+    gap: 5px;
+  }
+  button{
+    margin: 1rem;
+  }
+  .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  
+}
+
+
+
+
