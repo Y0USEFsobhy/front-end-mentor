@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.cover{
+  height: 100vh;
+}
+.cover .one{
+  height: 650px;
+  width: 650px;
+  position: relative;
+  bottom:250px ;
+  right: 90px;
+
+}
+.cover .two{
+  height: 500px ;
+  width: 500px;
+  position: relative;
+  bottom: -13%;
+  object-position: 50%;
+
+
+}
+.card{
+  height: 360px;
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  position: absolute;
+  /* z-index: 1; */
+}
+.photo img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* position: absolute; */
+
+}
+.victor{
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.victor img {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: relative;
+  
+
+}
+.stext h4 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 70px;
+  font-weight: 700;
+  
+}
+.stext h4 span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  margin-left: 5px;
+  
+}
+.stext p{
+  text-align: center;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.line{
+  height: 1px;
+  width: 100%;
+  background-color:  hsl(0, 0%, 59%);;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  
+}
+.one{
+  line-height: 0;
+
+}
+.info h5{
+  font-weight: 700;
+  font-size: 18px;
+  gap: 1px;
+  color: hsl(0, 1%, 29%);
+  
+}
+.info p{
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: hwb(0 59% 41%);
+}
+
+@media only screen and (max-width: 550px){
+
+  
+body{
+  width: 100vh;
+  zoom: 3;
+  
+
+}
+
+  
+  .cover .one{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    right: 170px;
+  
+
+}
+.cover .two{
+  height: 300px;
+  width: 300px;
+  position: relative;
+
+  left: 210px;
+  bottom: 31px;
+
+
+}
+}
+
