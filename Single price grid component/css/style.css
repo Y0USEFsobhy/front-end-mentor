@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Karla", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    background-color: #e6eff6;
+}
+.box{
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2)
+}
+.box .top-box{
+    background-color:#FFFFFF;
+    padding:30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box .top-box .main-title{
+    font-size: clamp(20px , 25px ,30px);
+    color:  hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.box .top-box .title{
+    font-size: clamp(18px , 21px ,26px);
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.box .top-box .paragraph{
+    color:  #B0B4BF;
+    width: 70%;
+    font-weight: 400;
+}
+.bottom-box .right-bottom-box{
+    background-color:#4ABEBD;
+    padding: 30px 50px 20px 50px;
+    flex-basis: 50%;
+    border-bottom-right-radius: 10px;
+}
+.bottom-box .left-bottom-box{
+    background-color: #2BB3B1;
+    padding: 30px 50px 20px 50px;
+    flex-basis: 50%;
+    border-bottom-left-radius: 10px;
+}
+.bottom-box .left-bottom-box .main-title{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.bottom-box .left-bottom-box .price{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.bottom-box .left-bottom-box .price span{
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 400;
+}
+.bottom-box .left-bottom-box p{
+    color: white;
+    font-size: 17px;
+}
+.bottom-box .left-bottom-box .sign-btn{
+    padding: 10px 20px ;
+    margin-top: 20px;
+    background-color: hsl(71, 73%, 54%) ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+}
+.bottom-box .left-bottom-box .sign-btn:hover{
+    background-color: hsl(71, 82%, 50%) ;
+}
+.bottom-box .right-bottom-box .title{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.bottom-box .right-bottom-box .paragraph{
+    color: rgba(255, 255, 255, 0.622);
+    font-weight: 400;
+}
+/* ______________-/ */
+@media screen and (max-width:767px){
+    .box{
+        width: 90%;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .box .bottom-box{
+        flex-direction: column;
+    }
+    .bottom-box .left-bottom-box{
+        border-radius: 0px;
+        padding: 30px 30px 20px 30px;
+    }
+    .bottom-box .right-bottom-box{
+        border-bottom-left-radius: 10px;
+        padding: 30px 30px 20px 30px;
+    }
+    .box .top-box .paragraph {
+        width: 100%;
+    }
+    .box .top-box {
+        padding: 24px;
+    }
+}
+@media screen and (max-width:991px){
+    body{
+        height: 100%;
+    }
+    .box{
+        margin: 20px 0;
+    }
+
+}
