@@ -62,6 +62,7 @@ nav .container .links ul li a {
   height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
 }
 .section_two {
   background-color: #f8f8fe;
